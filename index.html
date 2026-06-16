@@ -1,11 +1,245 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <title>Sportowa Wioska</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sportowa Wioska</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, sans-serif;
+background:#f8f8ff;
+color:#333;
+}
+
+header{
+background:linear-gradient(135deg,#7b2cff,#35c759);
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+header h1{
+font-size:4rem;
+margin-bottom:20px;
+}
+
+header p{
+font-size:1.4rem;
+max-width:700px;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:15px 30px;
+background:white;
+color:#7b2cff;
+font-weight:bold;
+text-decoration:none;
+border-radius:50px;
+font-size:1.1rem;
+}
+
+section{
+padding:70px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:40px;
+color:#7b2cff;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+gap:25px;
+justify-content:center;
+}
+
+.card{
+background:white;
+width:320px;
+padding:30px;
+border-radius:20px;
+box-shadow:0 8px 25px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+color:#35c759;
+margin-bottom:15px;
+}
+
+.age{
+background:#7b2cff;
+color:white;
+padding:40px;
+border-radius:20px;
+text-align:center;
+margin:15px;
+flex:1;
+min-width:250px;
+}
+
+.benefits{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.benefit{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.contact{
+background:linear-gradient(135deg,#35c759,#7b2cff);
+color:white;
+text-align:center;
+border-radius:25px;
+padding:60px 20px;
+}
+
+.contact p{
+font-size:1.2rem;
+margin:15px 0;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:50px;
+}
+
+</style>
 </head>
+
 <body>
-    <h1>Witaj w Sportowej Wiosce!</h1>
-    <p>To moja pierwsza strona internetowa.</p>
+
+<header>
+
+<h1>🏃‍♂️ Sportowa Wioska 🏃‍♀️</h1>
+
+<p>
+Trening motoryczny i ogólnorozwojowy dla dzieci.
+Rozwijamy sprawność, szybkość, koordynację i pewność siebie poprzez ruch i dobrą zabawę.
+</p>
+
+<a href="#kontakt" class="btn">
+Zapisz dziecko na zajęcia
+</a>
+
+</header>
+
+<section>
+
+<h2>Dlaczego Sportowa Wioska?</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>⚽ Ruch przez zabawę</h3>
+<p>Dzieci uczą się i rozwijają poprzez atrakcyjne gry i ćwiczenia.</p>
+</div>
+
+<div class="card">
+<h3>🏅 Rozwój motoryczny</h3>
+<p>Poprawiamy szybkość, zwinność, koordynację i równowagę.</p>
+</div>
+
+<div class="card">
+<h3>🤝 Budowanie pewności siebie</h3>
+<p>Każde dziecko rozwija się we własnym tempie i czuje się częścią zespołu.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Grupy wiekowe</h2>
+
+<div class="cards">
+
+<div class="age">
+<h3>7–10 lat</h3>
+<p>Zabawa, ruch i nauka podstaw sprawności.</p>
+</div>
+
+<div class="age">
+<h3>11–14 lat</h3>
+<p>Wszechstronny rozwój motoryczny i przygotowanie sportowe.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Co rozwijamy?</h2>
+
+<div class="benefits">
+
+<div class="benefit">🏃 Szybkość</div>
+<div class="benefit">⚡ Zwinność</div>
+<div class="benefit">🎯 Koordynację</div>
+<div class="benefit">💪 Siłę ogólną</div>
+<div class="benefit">🧠 Koncentrację</div>
+<div class="benefit">😊 Pewność siebie</div>
+
+</div>
+
+</section>
+
+<section id="kontakt">
+
+<div class="contact">
+
+<h2 style="color:white;">Kontakt</h2>
+
+<p>📍 Zajęcia odbywają się w różnych szkołach i miejscowościach.</p>
+
+<p>📞 889 355 024</p>
+
+<p>📧 szy.cuber@gmail.com</p>
+
+<p>
+Skontaktuj się, aby dowiedzieć się o najbliższej grupie treningowej.
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2025 Sportowa Wioska
+
+</footer>
+
 </body>
 </html>
