@@ -3,11 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Sportowa Wioska</title>
 
 <style>
-
 *{
 margin:0;
 padding:0;
@@ -24,7 +22,7 @@ header{
 background:linear-gradient(135deg,#7b2cff,#35c759);
 color:white;
 text-align:center;
-padding:80px 20px;
+padding:90px 20px;
 }
 
 header h1{
@@ -34,20 +32,22 @@ margin-bottom:20px;
 
 header p{
 font-size:1.4rem;
-max-width:700px;
+max-width:760px;
 margin:auto;
+line-height:1.5;
 }
 
 .btn{
 display:inline-block;
 margin-top:30px;
-padding:15px 30px;
+padding:16px 32px;
 background:white;
 color:#7b2cff;
 font-weight:bold;
 text-decoration:none;
 border-radius:50px;
 font-size:1.1rem;
+box-shadow:0 8px 20px rgba(0,0,0,.18);
 }
 
 section{
@@ -74,7 +74,7 @@ justify-content:center;
 background:white;
 width:320px;
 padding:30px;
-border-radius:20px;
+border-radius:22px;
 box-shadow:0 8px 25px rgba(0,0,0,.1);
 transition:.3s;
 }
@@ -89,35 +89,124 @@ margin-bottom:15px;
 }
 
 .age{
-background:#7b2cff;
+background:linear-gradient(135deg,#7b2cff,#5b1fd6);
 color:white;
 padding:40px;
-border-radius:20px;
+border-radius:22px;
 text-align:center;
 margin:15px;
 flex:1;
 min-width:250px;
+box-shadow:0 8px 25px rgba(0,0,0,.15);
 }
 
-.benefits{
+.gallery img{
+width:300px;
+height:420px;
+object-fit:cover;
+border-radius:24px;
+box-shadow:0 10px 25px rgba(0,0,0,.18);
+transition:.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.04);
+}
+
+.skills-section{
+background:linear-gradient(135deg,#7b2cff,#35c759);
+border-radius:32px;
+max-width:1100px;
+margin:60px auto;
+padding:65px 25px;
+box-shadow:0 12px 35px rgba(0,0,0,.16);
+}
+
+.skills-section h2{
+color:white;
+}
+
+.skills-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:22px;
 }
 
-.benefit{
+.skill-card{
 background:white;
-padding:25px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
+color:#4b1fc9;
+padding:28px;
+border-radius:22px;
+font-size:1.3rem;
+font-weight:bold;
+text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,.16);
+}
+
+.skill-card span{
+display:block;
+margin-top:10px;
+}
+
+.trainer-section{
+padding:80px 20px;
+}
+
+.trainer-box{
+background:white;
+max-width:950px;
+margin:auto;
+padding:50px;
+border-radius:32px;
+box-shadow:0 12px 35px rgba(0,0,0,.14);
+border:4px solid #7b2cff;
+}
+
+.trainer-header{
+text-align:center;
+margin-bottom:30px;
+}
+
+.trainer-icon{
+font-size:4rem;
+margin-bottom:15px;
+}
+
+.trainer-box h3{
+font-size:2.3rem;
+color:#35c759;
+margin-bottom:10px;
+}
+
+.trainer-subtitle{
+font-weight:bold;
+color:#7b2cff;
+font-size:1.15rem;
+margin-bottom:20px;
+}
+
+.trainer-box p{
+font-size:1.1rem;
+line-height:1.8;
+margin-bottom:18px;
+}
+
+.trainer-highlight{
+background:#f1eaff;
+border-left:6px solid #7b2cff;
+padding:20px;
+border-radius:16px;
+font-weight:bold;
+color:#4b1fc9;
 }
 
 .contact{
 background:linear-gradient(135deg,#35c759,#7b2cff);
 color:white;
 text-align:center;
-border-radius:25px;
+border-radius:28px;
 padding:60px 20px;
+box-shadow:0 12px 35px rgba(0,0,0,.16);
 }
 
 .contact p{
@@ -132,87 +221,69 @@ text-align:center;
 padding:25px;
 margin-top:50px;
 }
-  .trainer-box{
-background:white;
-max-width:900px;
-margin:auto;
-padding:40px;
-border-radius:25px;
-box-shadow:0 10px 30px rgba(0,0,0,.12);
-text-align:center;
-border:4px solid #7b2cff;
+
+@media(max-width:700px){
+header h1{
+font-size:2.8rem;
 }
 
-.trainer-icon{
-font-size:4rem;
-margin-bottom:15px;
-}
-
-.trainer-box h3{
-font-size:2rem;
-color:#35c759;
-margin-bottom:10px;
-}
-
-.trainer-subtitle{
-font-weight:bold;
-color:#7b2cff;
-margin-bottom:25px;
-}
-
-.trainer-box p{
+header p{
 font-size:1.1rem;
-line-height:1.7;
-margin-bottom:15px;
 }
 
+h2{
+font-size:2rem;
+}
+
+.trainer-box{
+padding:30px;
+}
+
+.gallery img{
+width:100%;
+height:auto;
+}
+}
 </style>
 </head>
 
 <body>
 
 <header>
-
 <h1>🏃‍♂️ Sportowa Wioska 🏃‍♀️</h1>
 
 <p>
-Trening motoryczny i ogólnorozwojowy dla dzieci.
-Rozwijamy sprawność, szybkość, koordynację i pewność siebie poprzez ruch i dobrą zabawę.
+Trening motoryczny i ogólnorozwojowy dla dzieci. 
+Ruch, zabawa, rozwój i pewność siebie — bliżej małych miejscowości.
 </p>
 
-<a href="#kontakt" class="btn">
-Zapisz dziecko na zajęcia
-</a>
-
+<a href="#kontakt" class="btn">Zapisz dziecko na zajęcia</a>
 </header>
 
 <section>
-
 <h2>Dlaczego Sportowa Wioska?</h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>⚽ Ruch przez zabawę</h3>
-<p>Dzieci uczą się i rozwijają poprzez atrakcyjne gry i ćwiczenia.</p>
+<p>Dzieci uczą się i rozwijają poprzez atrakcyjne gry, ćwiczenia oraz zadania ruchowe.</p>
 </div>
 
 <div class="card">
 <h3>🏅 Rozwój motoryczny</h3>
-<p>Poprawiamy szybkość, zwinność, koordynację i równowagę.</p>
+<p>Poprawiamy szybkość, zwinność, koordynację, równowagę i sprawność ogólną.</p>
 </div>
 
 <div class="card">
-<h3>🤝 Budowanie pewności siebie</h3>
-<p>Każde dziecko rozwija się we własnym tempie i czuje się częścią zespołu.</p>
+<h3>🤝 Pewność siebie</h3>
+<p>Każde dziecko rozwija się we własnym tempie i czuje się częścią sportowej społeczności.</p>
 </div>
 
 </div>
-
 </section>
 
 <section>
-
 <h2>Grupy wiekowe</h2>
 
 <div class="cards">
@@ -228,114 +299,85 @@ Zapisz dziecko na zajęcia
 </div>
 
 </div>
-
 </section>
 
 <section>
-
-<section>
-
 <h2>Galeria treningów</h2>
 
-<div class="cards">
-
-<img src="./zajecia.jpeg" style="width:300px;border-radius:20px;">
-<img src="./zajecia1.jpeg" style="width:300px;border-radius:20px;">
-<img src="./zajecia2.jpeg" style="width:300px;border-radius:20px;">
-<img src="./zajecia3.jpeg" style="width:300px;border-radius:20px;">
-<img src="./zajecia4.jpeg" style="width:300px;border-radius:20px;">
-<img src="./zajecia5.jpeg" style="width:300px;border-radius:20px;">
-
+<div class="cards gallery">
+<img src="./zajecia.jpeg">
+<img src="./zajecia1.jpeg">
+<img src="./zajecia2.jpeg">
+<img src="./zajecia3.jpeg">
+<img src="./zajecia4.jpeg">
+<img src="./zajecia5.jpeg">
 </div>
-
 </section>
 
 <section class="skills-section">
-
 <h2>Co rozwijamy?</h2>
 
 <div class="skills-grid">
-
 <div class="skill-card">🏃‍♂️ <span>Szybkość</span></div>
 <div class="skill-card">⚡ <span>Zwinność</span></div>
 <div class="skill-card">🎯 <span>Koordynację</span></div>
 <div class="skill-card">💪 <span>Siłę ogólną</span></div>
 <div class="skill-card">🧠 <span>Koncentrację</span></div>
 <div class="skill-card">😊 <span>Pewność siebie</span></div>
-
 </div>
-
 </section>
-</div>
 
-</section>
-<section>
-
+<section class="trainer-section">
 <h2>Poznaj trenera</h2>
 
 <div class="trainer-box">
 
-<div class="trainer-icon">👨‍🏫</div>
-
+<div class="trainer-header">
+<div class="trainer-icon">🏋️‍♂️</div>
 <h3>Szymon Cuber</h3>
-
 <p class="trainer-subtitle">
-Student wychowania fizycznego • Trener UEFA C • ASCA Level 1
+Student wychowania fizycznego • Trener UEFA C • Strength & Conditioning ASCA Level 1
+</p>
+</div>
+
+<p>
+Jestem studentem wychowania fizycznego na I roku studiów magisterskich, trenerem UEFA C oraz trenerem przygotowania motorycznego Strength & Conditioning ASCA Level 1.
 </p>
 
 <p>
-Jestem studentem wychowania fizycznego na I roku studiów magisterskich,
-trenerem UEFA C oraz trenerem przygotowania motorycznego Strength & Conditioning ASCA Level 1.
+Moim celem jest zaszczepienie w dzieciach pasji do sportu, którą kiedyś zaszczepiono we mnie. Chcę robić to profesjonalnie, dlatego stale się kształcę, rozwijam i zdobywam nowe doświadczenia.
 </p>
 
 <p>
-Moim celem jest zaszczepienie w dzieciach pasji do sportu, którą kiedyś zaszczepiono we mnie.
-Chcę robić to profesjonalnie, dlatego cały czas się kształcę, rozwijam i zdobywam nowe doświadczenia.
+Sportowa Wioska powstała z marzenia o stworzeniu społeczności, która wspólnie uprawia sport, rozwija się i czerpie radość z aktywności fizycznej.
 </p>
 
 <p>
-Sportowa Wioska powstała z marzenia o stworzeniu społeczności, która wspólnie uprawia sport,
-rozwija się i czerpie radość z aktywności fizycznej.
+Działam w mniejszych miejscowościach, ponieważ sam pochodzę z takiego środowiska i wiem, ile czasu rodzice muszą poświęcić, aby dowozić dzieci na treningi do dużego miasta.
 </p>
 
-<p>
-Dlaczego działam w mniejszych miejscowościach? Ponieważ sam pochodzę z takiego środowiska
-i wiem, ile czasu rodzice muszą poświęcić, aby dowozić dzieci na treningi do dużego miasta.
-</p>
-
-<p>
-Chcę to zmienić — aby profesjonalny trener przyjeżdżał bliżej dzieci,
-zamiast zmuszać rodziców do dalekich dojazdów.
+<p class="trainer-highlight">
+Chcę to zmienić — aby profesjonalny trener przyjeżdżał bliżej dzieci, zamiast zmuszać rodziców do dalekich dojazdów.
 </p>
 
 </div>
-
 </section>
-  
-<section id="kontakt">
 
+<section id="kontakt">
 <div class="contact">
 
 <h2 style="color:white;">Kontakt</h2>
 
 <p>📍 Zajęcia odbywają się w różnych szkołach i miejscowościach.</p>
-
 <p>📞 889 355 024</p>
-
 <p>📧 szy.cuber@gmail.com</p>
-
-<p>
-Skontaktuj się, aby dowiedzieć się o najbliższej grupie treningowej.
-</p>
+<p>Skontaktuj się, aby dowiedzieć się o najbliższej grupie treningowej.</p>
 
 </div>
-
 </section>
 
 <footer>
-
 © 2025 Sportowa Wioska
-
 </footer>
 
 </body>
